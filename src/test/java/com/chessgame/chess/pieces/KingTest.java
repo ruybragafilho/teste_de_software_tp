@@ -180,7 +180,7 @@ public class KingTest {
 	@Test
 	public void testAtacarTorreInimiga() {
 
-		Piece king2 = new King(board, Color.BLACK );
+		Piece king2 = new King(board, Color.BLACK, cm );
 		Position position2 = new Position(2, 3);        
 		board.placePiece(king2, position2);        
 		
