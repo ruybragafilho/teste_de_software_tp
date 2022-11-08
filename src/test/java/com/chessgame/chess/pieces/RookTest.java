@@ -30,7 +30,7 @@ public class BishopTest {
         Position position1 = new Position(3, 3);		
 		board.placePiece(rook1, position1);
 		
-        assertFalse( rook1.possibleMove(new Position(2, 2) );
+        assertFalse( rook1.possibleMove(new Position(2, 2)) );
 	}
 
     // Tenta movimentar uma torre para a diagonal superior à direita,
@@ -46,7 +46,7 @@ public class BishopTest {
         Position position1 = new Position(3, 3);		
 		board.placePiece(rook1, position1);
 		
-        assertFalse( rook1.possibleMove(new Position(2, 4) );
+        assertFalse( rook1.possibleMove(new Position(2, 4)) );
 	}
 
     // Tenta movimentar uma torre para a diagonal inferior à esquerda,
@@ -62,7 +62,7 @@ public class BishopTest {
         Position position1 = new Position(3, 3);		
 		board.placePiece(rook1, position1);
 		
-        assertFalse( rook1.possibleMove(new Position(4, 2) );
+        assertFalse( rook1.possibleMove(new Position(4, 2)) );
 	}
     
     // Tenta movimentar uma torre para a diagonal inferior à direita,
@@ -78,7 +78,7 @@ public class BishopTest {
         Position position1 = new Position(3, 3);		
 		board.placePiece(rook1, position1);
 		
-        assertFalse( rook1.possibleMove(new Position(4, 4) );
+        assertFalse( rook1.possibleMove(new Position(4, 4)) );
 	}    
 
 
@@ -95,7 +95,7 @@ public class BishopTest {
         Position position1 = new Position(3, 3);		
 		board.placePiece(rook1, position1);
 		
-        assertTrue( rook1.possibleMove(new Position(3, 4) );
+        assertTrue( rook1.possibleMove(new Position(3, 4)) );
 	}    
 
 
@@ -112,7 +112,7 @@ public class BishopTest {
         Position position1 = new Position(3, 3);		
 		board.placePiece(rook1, position1);
 		
-        assertTrue( rook1.possibleMove(new Position(3, 2) );
+        assertTrue( rook1.possibleMove(new Position(3, 2)) );
 	}    
 
 
@@ -129,7 +129,7 @@ public class BishopTest {
         Position position1 = new Position(3, 3);		
 		board.placePiece(rook1, position1);
 		
-        assertTrue( rook1.possibleMove(new Position(2, 3) );
+        assertTrue( rook1.possibleMove(new Position(2, 3)) );
 	}    
 
 
@@ -146,7 +146,7 @@ public class BishopTest {
         Position position1 = new Position(3, 3);		
 		board.placePiece(rook1, position1);
 		
-        assertTrue( rook1.possibleMove(new Position(4, 3) );
+        assertTrue( rook1.possibleMove(new Position(4, 3)) );
 	}       
 
 
@@ -167,7 +167,7 @@ public class BishopTest {
 		Position position2 = new Position(2, 3);        
 		board.placePiece(rook2, position2);        
 		
-		assertTrue( rook1.possibleMove(new Position(2, 3) );
+		assertTrue( rook1.possibleMove(new Position(2, 3)) );
 	}
 
 }
