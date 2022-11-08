@@ -1,4 +1,4 @@
-// Teste da classe Position.java, usando o framework de testes junit
+// Teste da classe Position, usando o framework de testes junit
 // Autor: Ruy Braga Filho
 
 
