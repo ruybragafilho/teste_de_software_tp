@@ -13,9 +13,10 @@ import main.java.com.chessgame.boardGame.Board;
 import main.java.com.chessgame.boardGame.Piece;
 import main.java.com.chessgame.boardGame.Position;
 import main.java.com.chessgame.chess.Color;
+import main.java.com.chessgame.chess.pieces.Rook;
 
 
-public class BishopTest {
+public class RookTest {
 
     // Tenta movimentar uma torre para a diagonal superior à esquerda,
     // o que não é permitido pelas regras do xadrez. A posição está vazia.
