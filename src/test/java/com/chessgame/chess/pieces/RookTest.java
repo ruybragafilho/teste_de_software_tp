@@ -20,6 +20,7 @@ public class RookTest {
 
 	Board board;
 	Piece rook1;
+	Position position1;
 
 
 	@Before
@@ -27,10 +28,10 @@ public class RookTest {
 
         // Índices das linhas: de 0 à 7 
         // Índices das colunas: de 0 à 7 
-		Board board = new Board(8, 8);		
+		board = new Board(8, 8);		
 
-		Piece rook1 = new Rook(board, Color.WHITE);
-        Position position1 = new Position(3, 3);		
+		rook1 = new Rook(board, Color.WHITE);
+        position1 = new Position(3, 3);		
 		board.placePiece(rook1, position1);		
 	}
 

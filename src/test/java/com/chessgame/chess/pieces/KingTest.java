@@ -13,13 +13,16 @@ import main.java.com.chessgame.boardGame.Board;
 import main.java.com.chessgame.boardGame.Piece;
 import main.java.com.chessgame.boardGame.Position;
 import main.java.com.chessgame.chess.Color;
+import main.java.com.chessgame.chess.ChessMatch;
 import main.java.com.chessgame.chess.pieces.King;
 
 
 public class KingTest {
 
 	Board board;
-	Piece king1;
+    ChessMatch cm;
+	Piece king1;    
+    Position position1;
 
 
 	@Before
@@ -27,10 +30,12 @@ public class KingTest {
 
         // Índices das linhas: de 0 à 7 
         // Índices das colunas: de 0 à 7 
-		Board board = new Board(8, 8);		
+		board = new Board(8, 8);	
+        
+        cm = new ChessMatch();
 
-		Piece king1 = new King(board, Color.WHITE);
-        Position position1 = new Position(3, 3);		
+		king1 = new King(board, Color.WHITE, cm);
+        position1 = new Position(3, 3);		
 		board.placePiece(king1, position1);		
 	}
 
