@@ -55,7 +55,7 @@ public class BoardTest  {
 		assertFalse(resposta);
 	}
 
-	@Test (expected = java.util.RuntimeException.class)
+	@Test (expected = RuntimeException.class)
 	public void testThereIsAPiece_EXCEPTION() {
 		Board board = new Board(5,5);
 		Position position = new Position(6,6);
@@ -79,7 +79,7 @@ public class BoardTest  {
 		assertTrue(board.removePiece(position) == null);
 	}
 	
-	@Test (expected = java.util.RuntimeException.class)
+	@Test (expected = RuntimeException.class)
 	public void testRemovePiece_EXCEPTION() {
 		Board board = new Board(5,5);
 		Position position = new Position(6,6);
@@ -117,7 +117,7 @@ public class BoardTest  {
 		assertTrue(board.piece(position) == null);
 	}
 	
-	@Test (expected = java.util.RuntimeException.class)
+	@Test (expected = RuntimeException.class)
 	public void testPlacePiece_Exception(){
 		Board board = new Board(5,5);
 		Position position = new Position(4,4);
