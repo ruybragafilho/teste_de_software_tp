@@ -1,5 +1,5 @@
 // Teste da classe Board, usando o framework de testes junit
-// Autor: Igor Roiz Teixeira
+// Autor: Igor Roiz Teixeira E Ruy Braga Filho
 
 
 package test.java.com.chessgame.boardGame;
@@ -56,12 +56,11 @@ public class BoardTest  {
 		assertFalse(resposta);
 	}
 
-	@Test
+	@Test (expected = java.util.RuntimeException.class)
 	public void testThereIsAPiece_EXCEPTION() {
 		Board board = new Board(5,5);
 		Position position = new Position(6,6);
-		RuntimeException e = assertThrows(RuntimeException.class, () -> board.thereIsAPiece(position));
-		assertTrue(e.getMessage().contains("Position not on the board"));
+		board.thereIsAPiece(position);
 	}
 	
 	@Test
@@ -81,12 +80,11 @@ public class BoardTest  {
 		assertTrue(board.removePiece(position) == null);
 	}
 	
-	@Test
+	@Test (expected = java.util.RuntimeException.class)
 	public void testRemovePiece_EXCEPTION() {
 		Board board = new Board(5,5);
 		Position position = new Position(6,6);
-		RuntimeException e = assertThrows(RuntimeException.class, () -> board.thereIsAPiece(position));
-		assertTrue(e.getMessage().contains("Position not on the board"));
+		board.thereIsAPiece(position);
 	}
 	
 	@Test
@@ -120,14 +118,13 @@ public class BoardTest  {
 		assertTrue(board.piece(position) == null);
 	}
 	
-	@Test 
+	@Test (expected = java.util.RuntimeException.class)
 	public void testPlacePiece_Exception(){
 		Board board = new Board(5,5);
 		Position position = new Position(4,4);
 		Piece piece = new Rook(board, Color.WHITE);
 		board.placePiece(piece, position);
-		RuntimeException e = assertThrows(RuntimeException.class, () -> board.placePiece(piece, position));
-		assertTrue(e.getMessage().contains("There is alredy a piece on position"));
+		board.placePiece(piece, position);
 	}
 	
 	@Test
