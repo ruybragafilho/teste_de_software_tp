@@ -15,7 +15,7 @@ import main.java.com.chessgame.boardGame.Board;
 import main.java.com.chessgame.boardGame.Piece;
 import main.java.com.chessgame.boardGame.Position;
 import main.java.com.chessgame.chess.Color;
-import main.java.com.chessgame.pieces.Rook;
+import main.java.com.chessgame.chess.pieces.Rook;
 
 
 
