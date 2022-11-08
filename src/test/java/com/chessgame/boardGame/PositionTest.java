@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
 import main.java.com.chessgame.boardGame.Position;
 
 
-class PositionTest  {
+public class PositionTest  {
 
     Position p;
 
@@ -26,7 +26,7 @@ class PositionTest  {
 
 
     @Test
-    void testRowValueAndColumnValue() {
+    public void testRowValueAndColumnValue() {
 
         assertTrue(p.getRow() == 2);
         assertTrue(p.getColumn() == 3);		        
@@ -34,7 +34,7 @@ class PositionTest  {
     
     
     @Test
-    void testSetRowValue() {
+    public void testSetRowValue() {
 		
 	p.setRow(6);	
         assertTrue(p.getRow() == 6);
@@ -43,7 +43,7 @@ class PositionTest  {
     
     
     @Test
-    void testSetColumnValue() {
+    public void testSetColumnValue() {
 		
 	p.setColumn(9);	
         assertTrue(p.getColumn() == 9);
