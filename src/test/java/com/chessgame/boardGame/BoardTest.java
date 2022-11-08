@@ -10,6 +10,7 @@ import org.junit.After;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 
 import main.java.com.chessgame.boardGame.Board;
 import main.java.com.chessgame.boardGame.Piece;
