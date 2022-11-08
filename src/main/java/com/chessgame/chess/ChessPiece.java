@@ -1,8 +1,8 @@
 package main.java.com.chessgame.chess;
 
-import main.java.com.chessgame.Board;
-import main.java.com.chessgame.Piece;
-import main.java.com.chessgame.Position;
+import main.java.com.chessgame.boardGame.Board;
+import main.java.com.chessgame.boardGame.Piece;
+import main.java.com.chessgame.boardGame.Position;
 
 public abstract class ChessPiece extends Piece{
 	
