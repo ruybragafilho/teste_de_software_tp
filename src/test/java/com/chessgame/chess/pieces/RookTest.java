@@ -1,5 +1,5 @@
 // Teste da classe Rook, usando o framework de testes junit
-// Autor: Ruy Braga Filho
+// Autor: Ruy Braga Filho 
 
 package test.java.com.chessgame.chess.pieces;
 

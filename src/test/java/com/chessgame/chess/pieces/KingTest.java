@@ -105,7 +105,7 @@ public class KingTest {
     // Tenta movimentar o rei, duas posições, na diagonal superior à esquerda,
     // o que não é permitido pelas regras do xadrez. A posição está vazia.
 	@Test
-	public void testDiagonalSuperiorEsquerda() {
+	public void testDiagonalSuperiorEsquerda2Posicoes() {
 
         assertFalse( king1.possibleMove(new Position(1, 1)) );
 	}
@@ -113,7 +113,7 @@ public class KingTest {
     // Tenta movimentar o rei, duas posições, na diagonal superior à direita,
     // o que não é permitido pelas regras do xadrez. A posição está vazia.   
 	@Test
-	public void testDiagonalSuperiorDireita() {
+	public void testDiagonalSuperiorDireita2Posicoes() {
 
         assertFalse( king1.possibleMove(new Position(1, 5)) );
 	}
@@ -121,7 +121,7 @@ public class KingTest {
     // Tenta movimentar o rei, duas posições, na diagonal inferior à esquerda,
     // o que não é permitido pelas regras do xadrez. A posição está vazia.   
 	@Test
-	public void testDiagonalInferiorEsquerda() {
+	public void testDiagonalInferiorEsquerda2Posicoes() {
 	
         assertFalse( king1.possibleMove(new Position(5, 1)) );
 	}
@@ -129,7 +129,7 @@ public class KingTest {
     // Tenta movimentar o rei, duas posições, na diagonal inferior à direita,
     // o que não é permitido pelas regras do xadrez. A posição está vazia.   
 	@Test
-	public void testDiagonalInferiorDireita() {
+	public void testDiagonalInferiorDireita2Posicoes() {
 	
         assertFalse( king1.possibleMove(new Position(5, 5)) );
 	}    
@@ -138,7 +138,7 @@ public class KingTest {
     // Tenta movimentar o rei, duas posições, na horizontal para a direita, 
     // o que não é permitido pelas regras do xadrez. A posição está vazia.
 	@Test
-	public void testHorizontalDireita() {
+	public void testHorizontalDireita2Posicoes() {
 	
         assertFalse( king1.possibleMove(new Position(3, 5)) );
 	}    
@@ -147,7 +147,7 @@ public class KingTest {
     // Tenta movimentar o rei, duas posições, na horizontal para a esquerda, 
     // o que não é permitido pelas regras do xadrez. A posição está vazia.
 	@Test
-	public void testHorizontalEsquerda() {
+	public void testHorizontalEsquerda2Posicoes() {
 		
         assertFalse( king1.possibleMove(new Position(3, 1)) );
 	}    
@@ -156,7 +156,7 @@ public class KingTest {
     // Tenta movimentar o rei, duas posições, na vertical para cima, 
     // o que não é permitido pelas regras do xadrez. A posição está vazia.
 	@Test
-	public void testVerticalCima() {
+	public void testVerticalCima2Posicoes() {
 		
         assertFalse( king1.possibleMove(new Position(1, 3)) );
 	}    
@@ -165,7 +165,7 @@ public class KingTest {
     // Tenta movimentar o rei, duas posições, na vertical para baixo, 
     // o que não é permitido pelas regras do xadrez. A posição está vazia.
 	@Test
-	public void testVerticalBaixo() {
+	public void testVerticalBaixo2Posicoes() {
 		
         assertFalse( king1.possibleMove(new Position(5, 3)) );
 	}       
