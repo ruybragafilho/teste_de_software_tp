@@ -1,6 +1,6 @@
 package main.java.com.chessgame.boardGame;
 
-public class Position {
+public class Position  {
 	private int row;
 	private int column;
 	

@@ -26,32 +26,28 @@ class PositionTest  {
 
 
     @Test
-    void testRowValue() {
-		
+    void testRowValueAndColumnValue() {
+
         assertTrue(p.getRow() == 2);
+        assertTrue(p.getColumn() == 3);		        
     }
     
     
     @Test
     void testSetRowValue() {
 		
-	p.setRow(6)	
+	p.setRow(6);	
         assertTrue(p.getRow() == 6);
+        assertTrue(p.getColumn() == 3);        
     }    
-    
-    
-    @Test
-    void testColumnValue() {
-		
-        assertTrue(p.getColumn() == 3);
-    }
     
     
     @Test
     void testSetColumnValue() {
 		
-	p.setColumn(9)	
+	p.setColumn(9);	
         assertTrue(p.getColumn() == 9);
+        assertTrue(p.getRow() == 2);        
     }    
 
 }
